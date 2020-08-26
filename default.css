@@ -281,3 +281,27 @@ h6 {
   bottom: -5px;
   left: -5px;
 }
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
+}
+
+.social-img {
+  width: 100%;
+}
+
+.social-links {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
