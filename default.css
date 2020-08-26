@@ -5,7 +5,7 @@
   --borderColor: #c1c1c1;
   --mainText: black;
   --secondaryText: #4b5156;
-  --themeDotBorder: #24292e;
+  --themeDotBorder: #24292eb7;
   --previewBg: rgb(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
   --buttonColor: black;
@@ -112,7 +112,7 @@ h6 {
   box-shadow: var(--boxShadow);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 3em 20em;
+  /* grid-template-rows: 3em 20em; */
   grid-template-areas:
     'nav-wrapper nav-wrapper'
     'left-column right-column';
@@ -166,8 +166,58 @@ h6 {
 
 .left-column {
   grid-area: left-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
   /* border: 1px dashed lightcoral; */
 }
+
+#profile-pic {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
+}
+
+.theme-options-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.theme-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: black;
+  box-shadow: var(--boxShadow);
+  border: 2px solid var(--themeDotBorder);
+  cursor: pointer;
+}
+.theme-dot:hover {
+  border-width: 5px;
+}
+
+.light-mode {
+  background-color: #fff;
+}
+.blue-mode {
+  background-color: #192734;
+}
+.green-mode {
+  background-color: #78866b;
+}
+.purple-mode {
+  background-color: #7e4c74;
+}
+
+.settings-note {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
 .right-column {
   grid-area: right-column;
   /* border: 1px dashed lightcoral; */
