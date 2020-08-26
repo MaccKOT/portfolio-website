@@ -24,7 +24,7 @@ body {
 
 body * {
   font-family: 'Roboto Mono', monospace;
-  /* transition: 0.3s; */ /* cool animation */
+  transition: 0.3s; /* cool animation */
 }
 
 h1,
@@ -91,6 +91,7 @@ h6 {
 
 .main-container {
   width: 1200px;
+  padding-top: 5px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1200px) {
@@ -146,6 +147,10 @@ h6 {
 #navigation {
   margin: 0;
   padding: 10px;
+}
+
+#navigation a {
+  color: var(--mainText);
 }
 
 #navigation li {
@@ -354,7 +359,7 @@ h6 {
 }
 
 .input-field {
-  width: 100%;
+  width: 99%;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--secondaryColor);
