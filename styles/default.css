@@ -230,12 +230,12 @@ h6 {
   background-color: black;
   opacity: 1;
   box-shadow: var(--boxShadow);
-  border: 2px solid var(--themeDotBorder);
+  border: 5px solid transparent;
   cursor: pointer;
 }
 .theme-dot:hover {
-  border-width: 2px;
-  opacity: 0.8;
+  border-width: 5px;
+  border: 5px solid var(--themeDotBorder);
 }
 
 .light-mode {
